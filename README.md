@@ -65,7 +65,7 @@ This labs purpose was to code a network scanner to see possible vulnerabilities,
 # Last section is for the ip of the system/network you are running this on.
 <img width="258" height="68" alt="image" src="https://github.com/user-attachments/assets/1705dd8a-c12e-4580-a3f1-c00c0c24fcac" />
 
-**In this case I began by testing with my local machine but then turned on my Azure virtual machine and ran the scan on that machine. THis can be altered to ask for input from the user but for my testing I hard coded the Azure vm ip address.**
+**In this case I began by testing with my local machine but then turned on my Azure virtual machine and ran the scan on that machine. THis can be altered to ask for input from the user but for my testing I hard coded the Azure vm ip address. To get good results I enabled all trafiic inbound in the network security group and disabled the Windows Firewall**
 
 # PDf report
 <img width="777" height="862" alt="image" src="https://github.com/user-attachments/assets/88741578-8ae9-462a-ad80-85e1f893b40b" /> <br/><br/>
