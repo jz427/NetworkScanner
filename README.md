@@ -83,7 +83,7 @@ The vulnerability function:
 - Includes fallback lookups:
   - Product name search
   - Keyword search
-  - 
+    
 This ensures the scanner returns meaningful results even when CPE data is incomplete.
 <br/><br/>
 <img width="925" height="730" alt="image" src="https://github.com/user-attachments/assets/1f10be3f-b622-48ea-9079-5214db9e3257" /> <br/><br/>
