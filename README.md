@@ -105,8 +105,22 @@ This adds practical value beyond "patch and update."<br/><br/>
 <img width="658" height="843" alt="image" src="https://github.com/user-attachments/assets/c646a6c9-ff35-40fd-9194-e1a52eda3b6c" /> <br/><br/>
 
 
-# Export function
-**THis section was to export the findings into a neat looking pdf as if we were handing this to a client**
+## PDF Report Generation
+
+The export function:
+- Creates a structured PDF
+- Prints:
+  - Host IP
+  - Port & protocol
+Service/product/version
+CPE identifier
+Highlights:
+Vulnerabilities in red
+“No vulnerabilities found” in green
+Appends remediation guidance for each port
+
+The result is a clean, client‑ready deliverable.
+
 <img width="694" height="877" alt="image" src="https://github.com/user-attachments/assets/4cac4495-7e1d-4558-b6a2-c44f87ea977f" />
 
 **We set the title of the pdf to be big and bold to stand out. We loop through the findings and print the host ip, port, procol, service name, product and CPE identifier. THe function then checks for vulnerabilities saved from the earlier check_vulns function and if they are found it displays them in red to stand out. It adds the CVE nuber, descriptiona and year. If none are found it prints "None are found" in green. THe function then goes through the ports to see if there are any remediation steps from the Remediation_Guidance dictionary, and prints them to the pdf.** <br/><br/>
