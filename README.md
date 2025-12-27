@@ -92,10 +92,11 @@ This ensures the scanner returns meaningful results even when CPE data is incomp
 
 
 <img width="925" height="730" alt="image" src="https://github.com/user-attachments/assets/1f10be3f-b622-48ea-9079-5214db9e3257" /> <br/><br/>
-
-**This function holds a list of vulnerabilities. It takes JSON data from the NVD and stores it into the data for our list. Such as CVE ID, Description and publication date which was used to filter out very old CVEs.Then we check if the cpe string is valid and updated to match it to a vulnerability. As I was having issues with this we made some backup lookups. I then attempted to search by product name if the CPE wouldnt show, and if that didnt work I went even broader and searched it by keyword to try and find some sort of information. After doing so the function returned a list of vulnerabilities with the corresponding data** 
 <img width="979" height="669" alt="image" src="https://github.com/user-attachments/assets/00f0a952-f8fd-40cc-9502-dfa3e31a1aae" />
 <br/><br/>
+
+
+
 
 # Remidiation Guide
 **I liked the idea of having a guide of remediation steps for common ports rather than a generic "update and patch", so I created a dictionary to hold common ports and associated remediation steps.**
