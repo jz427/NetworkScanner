@@ -55,10 +55,19 @@ The scanner:
   - CPE (if available)
 
 Each port’s data is stored as a dictionary and returned as a list of findings.
-
 <img width="656" height="465" alt="image" src="https://github.com/user-attachments/assets/1e75ad18-1847-46be-9025-96c4218934b0" /> <br/><br/>
 
 
+
+## CPE Normalization
+
+Older CPE formats often break modern CVE lookups.<br/>
+To fix this, the script includes a function that:
+- Detects outdated CPE strings
+- Splits them into vendor/product components
+- Converts them into CPE 2.3 format
+- Fills missing fields with * <br/>
+This ensures compatibility with the NVD API.
 
 **When running this I was having trouble with certain CVE and CPE formats linking together, therefore I needed to make sure the script could handle the old and new CPEs. I did this by creating a function that converts old CPE strings into the modern fomrat of CPE 2.3** <br/><br/>
 <img width="689" height="203" alt="image" src="https://github.com/user-attachments/assets/0434cd31-88eb-4af0-98db-cc86360e4aa0" />
