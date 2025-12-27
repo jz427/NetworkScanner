@@ -66,7 +66,7 @@ To fix this, the script includes a function that:
 - Detects outdated CPE strings
 - Splits them into vendor/product components
 - Converts them into CPE 2.3 format
-- Fills missing fields with * <br/>
+- Fills missing fields with * <br/><br/>
 This ensures compatibility with the NVD API.
 
 <img width="689" height="203" alt="image" src="https://github.com/user-attachments/assets/0434cd31-88eb-4af0-98db-cc86360e4aa0" />
@@ -83,12 +83,12 @@ The vulnerability function:
   - CVE ID
   - Description
   - Publication year
-  - Filters out extremely old CVEs
-  - Includes fallback lookups:
+ - Filters out extremely old CVEs
+ - Includes fallback lookups:
   - Product name search
   - Keyword search
 This ensures the scanner returns meaningful results even when CPE data is incomplete.
-
+<br/><br/>
 
 
 <img width="925" height="730" alt="image" src="https://github.com/user-attachments/assets/1f10be3f-b622-48ea-9079-5214db9e3257" /> <br/><br/>
