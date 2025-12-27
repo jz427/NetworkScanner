@@ -30,7 +30,7 @@
 
 # Steps
 
-# Step 1. Library Imports
+## Step 1. Library Imports
 
 - nmap → to perform aggressive scans and extract service/version data
 - requests → to query the NVD API for vulnerabilities
