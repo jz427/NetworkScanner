@@ -97,7 +97,6 @@ A custom dictionary maps common ports to recommended remediation steps.<br/>
 Example:
 
 - 22 (SSH) → Disable root login, use key‑based auth
-
 - 3389 (RDP) → Restrict access, enable NLA, enforce MFA
 
 This adds practical value beyond "patch and update."<br/><br/>
@@ -112,12 +111,12 @@ The export function:
 - Prints:
   - Host IP
   - Port & protocol
-Service/product/version
-CPE identifier
-Highlights:
-Vulnerabilities in red
-“No vulnerabilities found” in green
-Appends remediation guidance for each port
+  - Service/product/version
+  - CPE identifier
+- Highlights:
+  - Vulnerabilities in red
+  - “No vulnerabilities found” in green
+  - Appends remediation guidance for each port
 
 The result is a clean, client‑ready deliverable.
 
