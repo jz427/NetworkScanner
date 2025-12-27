@@ -28,7 +28,7 @@
 - Visual Studio Code
 - Microsoft Copilot (for iterative refinement)
 
-# Steps
+## Steps
 
 ## Step 1. Library Imports
 
