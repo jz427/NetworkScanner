@@ -30,12 +30,21 @@
 
 # Steps
 
-**I began coding and making corrections with copilots help by knowing what to provide it with and how to formulate questions. A lot of the info and code it gave was incorrect so it took a lot of testing and back and forth** <br/><br/>
+# Step 1. Library Imports
 
-**I will go through each section of code and explain the reasoning for it** <br/><br/>
+- nmap → to perform aggressive scans and extract service/version data
+- requests → to query the NVD API for vulnerabilities
+- FPDF → to generate a clean, readable PDF report<br/>
 
-## Lets start with the libraries
+These three components form the core of the scanning → analysis → reporting workflow.
+
 <img width="347" height="113" alt="image" src="https://github.com/user-attachments/assets/38fe6f12-9d84-4c6b-8d29-85d59d398f4e" /> <br/><br/>
+
+
+
+
+
+
 
 **For this project I needed to import the Nmap library in order to run the network scan and get the info needed.**
 **The requests library was needed to pull the vulnerability info from the web for our report.**
