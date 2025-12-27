@@ -40,17 +40,27 @@ These three components form the core of the scanning → analysis → reporting 
 
 <img width="347" height="113" alt="image" src="https://github.com/user-attachments/assets/38fe6f12-9d84-4c6b-8d29-85d59d398f4e" /> <br/><br/>
 
+## Step 2. Scan Function
+
+The scanner:
+- Creates an Nmap object
+- Runs an aggressive scan (-A) on the target
+- Iterates through hosts, protocols, and ports
+- Extracts:
+-- Port
+-- Protocol
+-- Service name
+-- Product
+-- Version
+-- CPE (if available)<br/>
+Each port’s data is stored as a dictionary and returned as a list of findings.
 
 
 
 
 
 
-**For this project I needed to import the Nmap library in order to run the network scan and get the info needed.**
-**The requests library was needed to pull the vulnerability info from the web for our report.**
-**Finally we needed the FPDF library in order to print out a nice looking report to imagine we were giving it to a client** <br/><br/>
 
-## We then created the scan function
 <img width="656" height="465" alt="image" src="https://github.com/user-attachments/assets/1e75ad18-1847-46be-9025-96c4218934b0" /> <br/><br/>
 
 **We create a function to begin our scan. We create a object using the nmap library. We then call the object to run a scan of our target/s using the aggressive, detect services version of Nmap. We create a list to hold the results and then iterate through the hosts(in this case one). The function continues to iterate through the protocols such as udp or tcp, and finally the port. We then collect this infomation including the service, product, version and cpe(Common Platform Enumeration identifier) which helps us find CVEs. It then returns a list of dictionaries, one for each port** <br/><br/>
