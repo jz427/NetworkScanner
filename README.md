@@ -56,15 +56,9 @@ The scanner:
 
 Each port’s data is stored as a dictionary and returned as a list of findings.
 
-
-
-
-
-
-
 <img width="656" height="465" alt="image" src="https://github.com/user-attachments/assets/1e75ad18-1847-46be-9025-96c4218934b0" /> <br/><br/>
 
-**We create a function to begin our scan. We create a object using the nmap library. We then call the object to run a scan of our target/s using the aggressive, detect services version of Nmap. We create a list to hold the results and then iterate through the hosts(in this case one). The function continues to iterate through the protocols such as udp or tcp, and finally the port. We then collect this infomation including the service, product, version and cpe(Common Platform Enumeration identifier) which helps us find CVEs. It then returns a list of dictionaries, one for each port** <br/><br/>
+
 
 **When running this I was having trouble with certain CVE and CPE formats linking together, therefore I needed to make sure the script could handle the old and new CPEs. I did this by creating a function that converts old CPE strings into the modern fomrat of CPE 2.3** <br/><br/>
 <img width="689" height="203" alt="image" src="https://github.com/user-attachments/assets/0434cd31-88eb-4af0-98db-cc86360e4aa0" />
