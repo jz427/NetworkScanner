@@ -21,12 +21,14 @@
   
 
 # Tools Used
-- Visual Studio Code
 - Python
-- Microsoft Copilot
-- Json
+- Nmap (via Python library)
+- Requests (API calls)
+- FPDF (PDF generation)
+- Visual Studio Code
+- Microsoft Copilot (for iterative refinement)
 
-## Steps
+# Steps
 
 **I began coding and making corrections with copilots help by knowing what to provide it with and how to formulate questions. A lot of the info and code it gave was incorrect so it took a lot of testing and back and forth** <br/><br/>
 
