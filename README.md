@@ -72,25 +72,20 @@ This ensures compatibility with the NVD API.
 <img width="689" height="203" alt="image" src="https://github.com/user-attachments/assets/0434cd31-88eb-4af0-98db-cc86360e4aa0" />
 
 
-## Step 4. Vulnerability Lookup
-
-
-The vulnerability function:
-
+### Step 4: Vulnerability Lookup 
+The vulnerability function: 
 - Queries the NVD API using the normalized CPE
-
 - Extracts:
   - CVE ID
   - Description
   - Publication year
- - Filters out extremely old CVEs
- - Includes fallback lookups:
+- Filters out extremely old CVEs
+- Includes fallback lookups:
   - Product name search
   - Keyword search
+  - 
 This ensures the scanner returns meaningful results even when CPE data is incomplete.
 <br/><br/>
-
-
 <img width="925" height="730" alt="image" src="https://github.com/user-attachments/assets/1f10be3f-b622-48ea-9079-5214db9e3257" /> <br/><br/>
 <img width="979" height="669" alt="image" src="https://github.com/user-attachments/assets/00f0a952-f8fd-40cc-9502-dfa3e31a1aae" />
 <br/><br/>
