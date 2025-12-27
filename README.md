@@ -91,12 +91,19 @@ This ensures the scanner returns meaningful results even when CPE data is incomp
 <br/><br/>
 
 
+### Step 5: Remediation Guide
+A custom dictionary maps common ports to recommended remediation steps.<br/>
 
+Example:
 
-# Remidiation Guide
-**I liked the idea of having a guide of remediation steps for common ports rather than a generic "update and patch", so I created a dictionary to hold common ports and associated remediation steps.**
+- 22 (SSH) → Disable root login, use key‑based auth
+
+- 3389 (RDP) → Restrict access, enable NLA, enforce MFA
+
+This adds practical value beyond "patch and update."<br/><br/>
+
 <img width="658" height="843" alt="image" src="https://github.com/user-attachments/assets/c646a6c9-ff35-40fd-9194-e1a52eda3b6c" /> <br/><br/>
-**This will come into play when the output is displayed to the pdf in the next section**
+
 
 # Export function
 **THis section was to export the findings into a neat looking pdf as if we were handing this to a client**
