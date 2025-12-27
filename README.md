@@ -30,7 +30,7 @@
 
 # Steps
 
-## Step 1. Library Imports
+## Step 1: Library Imports
 
 - nmap → to perform aggressive scans and extract service/version data
 - requests → to query the NVD API for vulnerabilities
@@ -40,7 +40,7 @@ These three components form the core of the scanning → analysis → reporting 
 
 <img width="347" height="113" alt="image" src="https://github.com/user-attachments/assets/38fe6f12-9d84-4c6b-8d29-85d59d398f4e" /> <br/><br/>
 
-## Step 2. Scan Function
+## Step 2: Scan Function
 
 The scanner:
 - Creates an Nmap object
@@ -59,7 +59,7 @@ Each port’s data is stored as a dictionary and returned as a list of findings.
 
 
 
-## Step 3. CPE Normalization
+## Step 3: CPE Normalization
 
 Older CPE formats often break modern CVE lookups.<br/>
 To fix this, the script includes a function that:
@@ -105,7 +105,7 @@ This adds practical value beyond "patch and update."<br/><br/>
 <img width="658" height="843" alt="image" src="https://github.com/user-attachments/assets/c646a6c9-ff35-40fd-9194-e1a52eda3b6c" /> <br/><br/>
 
 
-## PDF Report Generation
+## Step 6: PDF Report Generation
 
 The export function:
 - Creates a structured PDF
@@ -123,19 +123,40 @@ The result is a clean, client‑ready deliverable.
 
 <img width="694" height="877" alt="image" src="https://github.com/user-attachments/assets/4cac4495-7e1d-4558-b6a2-c44f87ea977f" />
 
-**We set the title of the pdf to be big and bold to stand out. We loop through the findings and print the host ip, port, procol, service name, product and CPE identifier. THe function then checks for vulnerabilities saved from the earlier check_vulns function and if they are found it displays them in red to stand out. It adds the CVE nuber, descriptiona and year. If none are found it prints "None are found" in green. THe function then goes through the ports to see if there are any remediation steps from the Remediation_Guidance dictionary, and prints them to the pdf.** <br/><br/>
+## Step 7: Target Selection
 
-# Last section is for the ip of the system/network you are running this on.
+
+7. Target Selection
+
+For testing, the script was run against:
+- Local machine
+- Azure VM (with inbound traffic allowed and Windows Firewall disabled for testing purposes)
+<br/><br/>
 <img width="258" height="68" alt="image" src="https://github.com/user-attachments/assets/1705dd8a-c12e-4580-a3f1-c00c0c24fcac" />
 
-**In this case I began by testing with my local machine but then turned on my Azure virtual machine and ran the scan on that machine. THis can be altered to ask for input from the user but for my testing I hard coded the Azure vm ip address. To get good results I enabled all trafiic inbound in the network security group and disabled the Windows Firewall**
 
-# PDf report
+## PDF Output
+The script generates a final PDF containing:
+
+- Scan results
+- Vulnerability findings
+- Remediation steps
+
 <img width="777" height="862" alt="image" src="https://github.com/user-attachments/assets/88741578-8ae9-462a-ad80-85e1f893b40b" /> <br/><br/>
 
-**Finally it prints the information to a pdf file which I will attatch here.** <br/><br/>
+## Reflection
 
-This lab was very insightfull and helped me refresh, my coding skills with python, nmap vulnerability scans and json/api calls
+This project strengthened my understanding of:
+
+- How vulnerability scanners work under the hood
+- How CPE/CVE mapping is performed
+- How to handle inconsistent or incomplete data
+- How to build automated reporting tools
+- How to debug and refine AI‑assisted code
+
+It was a valuable exercise in combining networking, security, and Python automation into a practical assessment tool.
+
+
 
 
 
