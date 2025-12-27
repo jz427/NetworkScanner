@@ -10,7 +10,7 @@
 - Providing remediation steps for common ports
 - Exporting all findings into a professional PDF report<br/><br/>
 
-- ## Skills Leanred
+ ## Skills Leanred
 - Python scripting and debugging
 - Nmap automation using Python libraries
 - Working with JSON and API responses
