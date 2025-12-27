@@ -95,7 +95,6 @@ This ensures the scanner returns meaningful results even when CPE data is incomp
 A custom dictionary maps common ports to recommended remediation steps.<br/>
 
 Example:
-
 - 22 (SSH) → Disable root login, use key‑based auth
 - 3389 (RDP) → Restrict access, enable NLA, enforce MFA
 
