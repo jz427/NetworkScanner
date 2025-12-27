@@ -3,14 +3,24 @@
 
 ## Objective
 
+ Build a custom network scanner capable of:<br/>
+- Enumerating open ports and services
+- Identifying software versions and CPEs
+- Mapping CPEs to known vulnerabilities
+- Pulling CVE details from the NVD API
+- Providing remediation steps for common ports
+- Exporting all findings into a professional PDF report### Skills Learned
 
-This labs purpose was to code a network scanner to see possible vulnerabilities, associated CVE's and remediation steps
-### Skills Learned
+- ## Skills Leanred
 
 
-- Python Refresher
-- Nmap
-- leveraging Ai
+- Python scripting and debugging
+- Nmap automation using Python libraries
+- Working with JSON and API responses
+- CPE (Common Platform Enumeration) parsing and normalization
+- CVE lookup and vulnerability correlation
+- PDF report generation
+- Practical vulnerability assessment workflow
   
 
 ### Tools Used
