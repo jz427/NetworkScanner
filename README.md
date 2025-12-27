@@ -47,12 +47,13 @@ The scanner:
 - Runs an aggressive scan (-A) on the target
 - Iterates through hosts, protocols, and ports
 - Extracts:
--- Port
--- Protocol
--- Service name
--- Product
--- Version
--- CPE (if available)<br/>
+  - Port
+  - Protocol
+  - Service name
+  - Product
+  - Version
+  - CPE (if available)
+
 Each port’s data is stored as a dictionary and returned as a list of findings.
 
 
