@@ -54,7 +54,7 @@ The scanner:
   - Version
   - CPE (if available)
 
-Each port’s data is stored as a dictionary and returned as a list of findings.
+Each port’s data is stored as a dictionary and returned as a list of findings.<br/>
 <img width="656" height="465" alt="image" src="https://github.com/user-attachments/assets/1e75ad18-1847-46be-9025-96c4218934b0" /> <br/><br/>
 
 
