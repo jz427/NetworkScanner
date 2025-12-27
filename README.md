@@ -69,10 +69,8 @@ To fix this, the script includes a function that:
 - Fills missing fields with * <br/>
 This ensures compatibility with the NVD API.
 
-**When running this I was having trouble with certain CVE and CPE formats linking together, therefore I needed to make sure the script could handle the old and new CPEs. I did this by creating a function that converts old CPE strings into the modern fomrat of CPE 2.3** <br/><br/>
 <img width="689" height="203" alt="image" src="https://github.com/user-attachments/assets/0434cd31-88eb-4af0-98db-cc86360e4aa0" />
 
-**This function first checks if the CPE is in the old format and then splits it into sections. This helps us extract the vendor and product and convert it to the updated CPE format. We used * for unspecified fields. If the format wasnt old it wuldnt modify the CPE.** <br/>
 
 ## Function to check the national Vulnerability Databse to pull info (1 of 2 pictures)
 <img width="925" height="730" alt="image" src="https://github.com/user-attachments/assets/1f10be3f-b622-48ea-9079-5214db9e3257" /> <br/><br/>
