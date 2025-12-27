@@ -9,18 +9,16 @@
 - Mapping CPEs to known vulnerabilities
 - Pulling CVE details from the NVD API
 - Providing remediation steps for common ports
-- Exporting all findings into a professional PDF report### Skills Learned
+- Exporting all findings into a professional PDF report<br/>
 
 - ## Skills Leanred
-
-
 - Python scripting and debugging
 - Nmap automation using Python libraries
 - Working with JSON and API responses
 - CPE (Common Platform Enumeration) parsing and normalization
 - CVE lookup and vulnerability correlation
 - PDF report generation
-- Practical vulnerability assessment workflow
+- Practical vulnerability assessment workflow<br/>
   
 
 ### Tools Used
