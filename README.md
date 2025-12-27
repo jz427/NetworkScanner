@@ -2,14 +2,13 @@
 
 
 ## Objective
-
  Build a custom network scanner capable of:<br/>
 - Enumerating open ports and services
 - Identifying software versions and CPEs
 - Mapping CPEs to known vulnerabilities
 - Pulling CVE details from the NVD API
 - Providing remediation steps for common ports
-- Exporting all findings into a professional PDF report<br/>
+- Exporting all findings into a professional PDF report<br/><br/>
 
 - ## Skills Leanred
 - Python scripting and debugging
@@ -18,12 +17,10 @@
 - CPE (Common Platform Enumeration) parsing and normalization
 - CVE lookup and vulnerability correlation
 - PDF report generation
-- Practical vulnerability assessment workflow<br/>
+- Practical vulnerability assessment workflow<br/><br/>
   
 
 ### Tools Used
-
-
 - Visual Studio Code
 - Python
 - Microsoft Copilot
