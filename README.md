@@ -146,7 +146,7 @@ The script generates a final PDF containing:
 
 This project strengthened my understanding of:
 
-- How vulnerability scanners work under the hood
+- How vulnerability scanners work 
 - How CPE/CVE mapping is performed
 - How to handle inconsistent or incomplete data
 - How to build automated reporting tools
